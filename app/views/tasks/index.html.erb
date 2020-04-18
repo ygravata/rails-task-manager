@@ -1,9 +1,9 @@
-My tasks
+<h2>My tasks</h2>
 <ul>
   <% @tasks.each do |task| %>
-    <li><%= link_to task.title, task_path(task)%></li>
+    <li style="list-style:none;"><%= link_to task.title, task_path(task)%></li>
   <% end %>
 </ul>
 
-<%= link_to "Create a Task", "/tasks/new" %>
+<p><%= link_to "Create a Task", "/tasks/new" %></p>
 
